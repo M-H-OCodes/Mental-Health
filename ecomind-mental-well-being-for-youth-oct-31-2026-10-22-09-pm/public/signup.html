@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style1.css">
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+        import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
+        import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js";
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyA4yI6s3vTszJu2av8OAHtsmBngqP4Apcs",
+  authDomain: "fir-1-e84b8.firebaseapp.com",
+  databaseURL: "https://fir-1-e84b8-default-rtdb.firebaseio.com",
+  projectId: "fir-1-e84b8",
+  storageBucket: "fir-1-e84b8.firebasestorage.app",
+  messagingSenderId: "655755862767",
+  appId: "1:655755862767:web:291e6854036b1939a3b11a"
+        };
+
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+        const database = getDatabase(app);
+
+        document.getElementById("signup-form").addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            const password = document.getElementById("password").value;
+
+            createUserWithEmailAndPassword(auth, email, password)
+                .then((userCredential) => {
+                    const user = userCredential.user;
+
+                    set(ref(database, 'users/' + user.uid), {
+                        name: name,
+                        email: email,
+                    }).then(() => {
+                        alert("Sign Up Successful!");
+                        window.location.href = "login.html";
+                    }).catch((error) => {
+                        alert("Error saving user data.");
+                    });
+                })
+                .catch((error) => {
+                    alert(error.message);
+                });
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="form-box">
+            <h1>Sign Up</h1>
+            <form id="signup-form">
+                <div class="input-group">
+                    <div class="input-field">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" id="name" placeholder="Name" required>
+                    </div>
+                    <div class="input-field">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" id="email" placeholder="Email" required>
+                    </div>
+                    <div class="input-field">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" id="password" placeholder="Password" required>
+                    </div>
+                </div>
+                <div class="btn-group">
+                    <button type="submit" class="btn">Sign Up</button>
+                    <button type="button" class="btn secondary-btn" onclick="window.location.href='login.html'">Log In</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

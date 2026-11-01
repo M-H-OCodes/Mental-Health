@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Mindful Youth</title>
+  <style>
+
+    body {
+      font-family: 'Open Sans', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #F3F9F7;
+      color: #333333;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    header {
+      background: #5AA59E;
+      color: white;
+      padding: 25px;
+      font-size: 32px;
+      font-weight: bold;
+      text-align: center;
+    }
+    
+
+    main.zigzag-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2px;
+      max-width: 1400px;
+      margin: 30px auto;
+      flex: 1;
+    }
+    
+
+    section.text-section, 
+    section.image-section {
+      padding: 20px;
+      border-radius: 8px;
+      min-height: 400px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    
+
+    .text-section h3 {
+      font-size: 28px;
+      margin-bottom: 25px;
+      text-align: center;
+    }
+    
+    .text-section p {
+      font-size: 18px;
+      line-height: 1.8;
+      margin: 0;
+      text-align: justify;
+    }
+    
+
+    .orange-bg {
+      background: #5AA59E;
+      color: white;
+    }
+    
+    .green-bg {
+      background: #A4D7C9;
+      color: #1E4D4A;
+    }
+    
+    section.image-section {
+      padding: 2px;
+    }
+    
+
+    section.image-section img {
+      width: calc(99% - 9px);
+      height: 97%;
+      object-fit: cover;
+      border-radius: 8px;
+      margin: 8px;
+      transition: transform 0.3s;
+    }
+    
+    section.image-section img:hover {
+      transform: scale(1.03);
+    }
+    
+
+
+    .animated-text {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1s forwards;
+    }
+    
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+
+    .footer {
+      background: #5AA59E;
+      color: white;
+      padding: 25px;
+      text-align: center;
+      margin-top: auto;
+      font-size: 20px;
+    }
+    
+    .footer p {
+      margin: 15px 0;
+      transition: transform 0.3s;
+    }
+    
+    .footer p:hover {
+      transform: scale(1.01);
+      color: #A4D7C9;
+    }
+    
+    /* Bottom Navigation */
+    .nav-bottom {
+      display: flex;
+      justify-content: space-around;
+      background: #fff;
+      padding: 15px;
+      border-top: 2px solid #A4D7C9;
+      position: sticky;
+      bottom: 0;
+      z-index: 1000;
+    }
+    
+    .nav-bottom div {
+      text-align: center;
+      cursor: pointer;
+      transition: transform 0.3s;
+      color: #5AA59E;
+      font-size: 18px;
+    }
+    
+    .nav-bottom div:hover {
+      transform: scale(1.1);
+      color: #F2A7A7;
+    }
+    
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      main.zigzag-grid {
+        grid-template-columns: 1fr;
+        max-width: 95%;
+      }
+      
+      .text-section h3 {
+        font-size: 24px;
+      }
+      
+      .text-section p {
+        font-size: 16px;
+      }
+      
+      header {
+        font-size: 28px;
+        padding: 20px;
+      }
+      
+      .nav-bottom div {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>ABOUT US</header>
+  
+  <main class="zigzag-grid">
+    <section class="image-section orange-bg">
+      <img src="images/NEWS_2024.03.02_Student-led-mental-health-group_Feature_SeventyFour-shutterstock_2195058933.jpg" alt="Teenagers discussing mental well-being">
+    </section>
+    <section class="text-section orange-bg">
+      <h3>About this Website</h3>
+      <p class="animated-text">
+        Mindful Youth is a dedicated online platform focused on mental well‐being for teenagers. Here, you’ll find a range of blogs, videos, and interactive resources based upon information collected from several authentic sources inclusive of professionally guided websites, references and articles. Our aim is to provide clear, evidence-based information and relatable insights that empower young people to better understand and manage their mental health.
+      </p>
+    </section>
+    
+    <section class="text-section green-bg">
+      <h3>Reason behind Building this Website</h3>
+      <p class="animated-text">
+        The website was built in response to the growing mental health challenges among teenagers—exacerbated by the isolation during the COVID-19 pandemic, academic pressures, and increasing cyberbullying. Recognizing that young minds are particularly vulnerable, our platform seeks to bridge the gap by providing a safe, inclusive space where teenagers can access support, share experiences, and gain awareness about their mental health.
+      </p>
+    </section>
+    <section class="image-section green-bg">
+      <img src="images/teenager-sitting-next-window-home-footage-241432759_iconl.webp" alt="Teenager reading near window">
+    </section>
+    
+    <section class="image-section orange-bg">
+      <img src="images/shutterstock_1464234134-1024x684-1.jpg" alt="Group of mental health experts">
+    </section>
+    <section class="text-section orange-bg">
+      <h3>About the Topic</h3>
+      <p class="animated-text">
+        Research indicates that nearly one in three teenagers experience anxiety at some point in their lives, with studies highlighting issues such as academic burnout, social isolation, and cyberbullying as key contributors. By presenting these facts alongside expert insights and real-life stories, we aim to foster a better understanding of the prevalence and impact of mental health issues on young individuals.
+      </p>
+    </section>
+    
+    <section class="text-section green-bg">
+      <h3>Goal behind Building this Website</h3>
+      <p class="animated-text">
+        Our goal is to create an empathetic, supportive community where teenagers can feel heard and understood. We are committed to spreading awareness, providing reliable resources, and encouraging dialogue about mental well-being. Ultimately, Mindful Youth is here to empower young people to navigate life’s challenges with resilience and confidence.
+      </p>
+    </section>
+    <section class="image-section green-bg">
+      <img src="images/mental1.jpg" alt="Roadmap for mental health awareness">
+    </section>
+  </main>
+  
+  <footer class="footer">
+    <p style="color: black;">© 2025 Mindful Youth. All Rights Reserved.</p>
+  </footer>
+  
+  <div class="nav-bottom">
+    <div onclick="window.location.href='blogs.html'">
+      <p>📖 All Blogs</p>
+    </div>
+    <div onclick="window.location.href='Videos.html'">
+      <p>🎥 Videos</p>
+    </div>
+    <div onclick="window.location.href='index.html'">
+      <p>🏠 Home</p>
+    </div>
+    <div onclick="window.location.href='writeablog.html'">
+      <p>✍️ Write a Blog</p>
+    </div>
+    <div onclick="window.location.href='register.html'">
+      <p>👤 Logout</p>
+    </div>
+  </div>
+
+</body>
+</html>
