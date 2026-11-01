@@ -13,12 +13,12 @@ interface WriteBlogViewProps {
 }
 
 const PRESET_COVERS = [
-  { label: 'Mindfulness', url: '/images/mindfulnessshutterstock_1416917957.webp' },
-  { label: 'Expectations & Stress', url: '/images/1.jpg' },
-  { label: 'Therapy & Strength', url: '/images/psychologist-therapy-counseling-illustration-psychology-psychiatry_33099-658.avif' },
-  { label: 'Self-Care & Calm', url: '/images/teenager-sitting-next-window-home-footage-241432759_iconl.webp' },
-  { label: 'Mental Health Journey', url: '/images/mental1.jpg' },
-  { label: 'Student Support', url: '/images/NEWS_2024.03.02_Student-led-mental-health-group_Feature_SeventyFour-shutterstock_2195058933.jpg' }
+  { label: 'Mindfulness', url: 'images/mindfulnessshutterstock_1416917957.webp' },
+  { label: 'Expectations & Stress', url: 'images/1.jpg' },
+  { label: 'Therapy & Strength', url: 'images/psychologist-therapy-counseling-illustration-psychology-psychiatry_33099-658.avif' },
+  { label: 'Self-Care & Calm', url: 'images/teenager-sitting-next-window-home-footage-241432759_iconl.webp' },
+  { label: 'Mental Health Journey', url: 'images/mental1.jpg' },
+  { label: 'Student Support', url: 'images/NEWS_2024.03.02_Student-led-mental-health-group_Feature_SeventyFour-shutterstock_2195058933.jpg' }
 ];
 
 export const WriteBlogView: React.FC<WriteBlogViewProps> = ({
@@ -74,7 +74,7 @@ export const WriteBlogView: React.FC<WriteBlogViewProps> = ({
       return;
     }
 
-    const finalImage = customImageUrl.trim() || selectedImage || '/images/1.jpg';
+    const finalImage = customImageUrl.trim() || selectedImage || 'images/1.jpg';
 
     onPublish({
       title: title.trim(),
@@ -389,11 +389,11 @@ export const WriteBlogView: React.FC<WriteBlogViewProps> = ({
                     {/* Image Thumbnail */}
                     <div className="w-full sm:w-36 h-28 shrink-0 bg-white rounded-lg overflow-hidden border border-[#5AA59E]/30">
                       <img
-                        src={blog.imageUrl || '/images/1.jpg'}
+                        src={blog.imageUrl || 'images/1.jpg'}
                         alt={blog.title}
                         className="w-full h-full object-cover"
                         onError={(e) => {
-                          (e.target as HTMLImageElement).src = '/images/1.jpg';
+                          (e.target as HTMLImageElement).src = 'images/1.jpg';
                         }}
                       />
                     </div>

@@ -126,11 +126,11 @@ export const BlogsView: React.FC<BlogsViewProps> = ({ blogs, onNavigate }) => {
                         <div>
                           <div className="h-48 overflow-hidden bg-gray-100">
                             <img
-                              src={blog.imageUrl || '/images/1.jpg'}
+                              src={blog.imageUrl || 'images/1.jpg'}
                               alt={blog.title}
                               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                               onError={(e) => {
-                                (e.target as HTMLImageElement).src = '/images/1.jpg';
+                                (e.target as HTMLImageElement).src = 'images/1.jpg';
                               }}
                             />
                           </div>

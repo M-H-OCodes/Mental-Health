@@ -184,7 +184,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onClose, onLoginSu
         {/* Modal Branding Header */}
         <div className="text-center mb-6">
           <div className="w-14 h-14 mx-auto mb-2 bg-[#A4D7C9] rounded-2xl flex items-center justify-center shadow-xs">
-            <img src="/ECOMIND-removebg-preview.png" alt="Logo" className="w-11 h-11 object-contain" />
+            <img src="ECOMIND-removebg-preview.png" alt="Logo" className="w-11 h-11 object-contain" />
           </div>
 
           {mode === 'login' && (

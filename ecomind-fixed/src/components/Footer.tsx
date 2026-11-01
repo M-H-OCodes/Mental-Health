@@ -21,7 +21,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
             aria-label="Back to top"
           >
             <img
-              src="/Arrow.png"
+              src="Arrow.png"
               alt="Back to top"
               className="w-7 h-7 transform -rotate-90 group-hover:-translate-y-1 transition-transform"
             />
@@ -39,7 +39,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
             aria-label="Back to top"
           >
             <img
-              src="/Arrow.png"
+              src="Arrow.png"
               alt="Back to top"
               className="w-7 h-7 transform -rotate-90 group-hover:-translate-y-1 transition-transform"
             />

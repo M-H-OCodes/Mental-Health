@@ -25,11 +25,11 @@ export const GuideView: React.FC<GuideViewProps> = ({ onBack, onNavigate }) => {
           <div className="flex flex-col lg:flex-row gap-8 items-center lg:items-start">
             <div className="w-full lg:w-2/5 shrink-0 rounded-2xl overflow-hidden shadow-md bg-white">
               <img
-                src="/images/your-head-and-heart-s.jpg"
+                src="images/your-head-and-heart-s.jpg"
                 alt="Mental Well-being Concept"
                 className="w-full h-64 lg:h-80 object-cover"
                 onError={(e) => {
-                  (e.target as HTMLImageElement).src = '/images/mental-health.jpg';
+                  (e.target as HTMLImageElement).src = 'images/mental-health.jpg';
                 }}
               />
             </div>
@@ -59,11 +59,11 @@ export const GuideView: React.FC<GuideViewProps> = ({ onBack, onNavigate }) => {
           <div className="flex flex-col lg:flex-row gap-8 items-center lg:items-start">
             <div className="w-full lg:w-2/5 shrink-0 rounded-2xl overflow-hidden shadow-md bg-white">
               <img
-                src="/images/shutterstock_611098478.jpg"
+                src="images/shutterstock_611098478.jpg"
                 alt="Mental Health Challenges"
                 className="w-full h-64 lg:h-80 object-cover"
                 onError={(e) => {
-                  (e.target as HTMLImageElement).src = '/images/mental-health.jpg';
+                  (e.target as HTMLImageElement).src = 'images/mental-health.jpg';
                 }}
               />
             </div>
@@ -114,11 +114,11 @@ export const GuideView: React.FC<GuideViewProps> = ({ onBack, onNavigate }) => {
           <div className="flex flex-col lg:flex-row gap-8 items-center lg:items-start">
             <div className="w-full lg:w-2/5 shrink-0 rounded-2xl overflow-hidden shadow-md bg-white">
               <img
-                src="/images/image.jpeg"
+                src="images/image.jpeg"
                 alt="Well-being Practices"
                 className="w-full h-64 lg:h-80 object-cover"
                 onError={(e) => {
-                  (e.target as HTMLImageElement).src = '/images/mental-health.jpg';
+                  (e.target as HTMLImageElement).src = 'images/mental-health.jpg';
                 }}
               />
             </div>

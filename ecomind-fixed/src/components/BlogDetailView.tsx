@@ -60,11 +60,11 @@ export const BlogDetailView: React.FC<BlogDetailViewProps> = ({
         {/* Hero Image */}
         <div className="w-full max-h-[460px] overflow-hidden bg-black/5">
           <img
-            src={blog.imageUrl || '/images/1.jpg'}
+            src={blog.imageUrl || 'images/1.jpg'}
             alt={blog.title}
             className="w-full h-full object-cover max-h-[460px]"
             onError={(e) => {
-              (e.target as HTMLImageElement).src = '/images/1.jpg';
+              (e.target as HTMLImageElement).src = 'images/1.jpg';
             }}
           />
         </div>

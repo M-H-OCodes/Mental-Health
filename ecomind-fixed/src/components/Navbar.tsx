@@ -35,7 +35,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             onClick={() => handleNav('home')}
           >
             <img
-              src="/ECOMIND-removebg-preview.png"
+              src="ECOMIND-removebg-preview.png"
               alt="ECOMIND Logo"
               className="w-12 h-12 object-contain transition-transform duration-300 group-hover:scale-105"
             />

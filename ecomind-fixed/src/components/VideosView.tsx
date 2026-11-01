@@ -151,7 +151,7 @@ export const VideosView: React.FC<VideosViewProps> = ({ videos, onPlayVideo }) =
                       alt={video.title}
                       className="video-thumbnail w-full h-full object-cover group-hover:scale-105 transition-transform duration-300 opacity-90 group-hover:opacity-100"
                       onError={(e) => {
-                        (e.target as HTMLImageElement).src = '/images/mental-health.jpg';
+                        (e.target as HTMLImageElement).src = 'images/mental-health.jpg';
                       }}
                     />
                     <div className="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/10 transition-colors">
