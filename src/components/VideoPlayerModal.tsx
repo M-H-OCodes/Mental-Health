@@ -1,5 +1,5 @@
 import React from 'react';
-import { X, ExternalLink, Play, FolderOpen, AlertCircle, Info } from 'lucide-react';
+import { X, ExternalLink, Play, FolderOpen } from 'lucide-react';
 import { VideoItem, getDriveEmbedUrl, getDriveViewUrl, GOOGLE_DRIVE_FOLDER_URL } from '../utils/blogUtils.ts';
 
 interface VideoPlayerModalProps {
@@ -113,13 +113,6 @@ export const VideoPlayerModal: React.FC<VideoPlayerModalProps> = ({ video, onClo
             </div>
           )}
 
-          {/* GitHub Optimization notice */}
-          <div className="flex items-start gap-2 text-xs text-[#666666] bg-amber-50 border border-amber-200 p-3 rounded-lg">
-            <Info className="w-4 h-4 text-amber-600 shrink-0 mt-0.5" />
-            <span>
-              <strong>GitHub Publishing Tip:</strong> By hosting this video on Google Drive instead of bundling huge MP4 files into Git, your repository size remains negligible (&lt;5 MB total) and comfortably within GitHub's strict file limits.
-            </span>
-          </div>
         </div>
       </div>
     </div>
