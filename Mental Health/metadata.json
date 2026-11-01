@@ -1,6 +1,0 @@
-{
-  "name": "EcoMind - Mental Well-Being for Youth",
-  "description": "Empowering teenagers through mindful articles, expert videos hosted on Google Drive, interactive blog sharing, and mental wellness guidance.",
-  "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
-}
