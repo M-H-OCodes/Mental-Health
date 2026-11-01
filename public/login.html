@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style1.css">
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+        import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyA4yI6s3vTszJu2av8OAHtsmBngqP4Apcs",
+            authDomain: "fir-1-e84b8.firebaseapp.com",
+            databaseURL: "https://fir-1-e84b8-default-rtdb.firebaseio.com",
+            projectId: "fir-1-e84b8",
+            storageBucket: "fir-1-e84b8.firebasestorage.app",
+            messagingSenderId: "655755862767",
+            appId: "1:655755862767:web:291e6854036b1939a3b11a"
+        };
+
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+
+        document.getElementById("login-form").addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            const email = document.getElementById("email").value;
+            const password = document.getElementById("password").value;
+
+            signInWithEmailAndPassword(auth, email, password)
+                .then((userCredential) => {
+                    const user = userCredential.user;
+                    alert("Login Successful!");
+                    
+                 
+                    sessionStorage.setItem("loggedIn", "true");
+                    sessionStorage.setItem("userId", user.uid);
+                    
+                    window.location.href = `writeablog.html?userId=${user.uid}`;
+                })
+                .catch((error) => {
+                    alert(error.message);
+                });
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="form-box">
+            <h1>Login</h1>
+            <form id="login-form">
+                <div class="input-group">
+                    <div class="input-field">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" id="email" placeholder="Email" required>
+                    </div>
+                    <div class="input-field">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" id="password" placeholder="Password" required>
+                    </div>
+                </div>
+                <button type="submit" class="btn">Log In</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
