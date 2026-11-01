@@ -114,7 +114,7 @@ export const INITIAL_BLOGS: BlogItem[] = [
     category: 'mental-health',
     imageUrl: 'images/psychologist-therapy-counseling-illustration-psychology-psychiatry_33099-658.avif',
     authorName: 'Jordan Taylor, Youth Peer Counselor',
-    timestamp: 1740528000000,
+    timestamp: 1737158400000,
     wordCount: 520,
     readTime: 3,
     content: `Seeking assistance is a sign of strength, not weakness. You are deserving of happiness, understanding, and support.
@@ -137,7 +137,7 @@ Reaching out does not mean you have surrendered; it means you refuse to let your
     category: 'mental-health',
     imageUrl: 'images/mental-health.jpg',
     authorName: 'Dr. Elena Rostova, Adolescent Psychologist',
-    timestamp: 1740614400000,
+    timestamp: 1740787200000,
     wordCount: 610,
     readTime: 4,
     content: `Many teenagers hesitate to seek therapy because media portrayals make it look intimidating—lying on a leather couch while a silent clinician takes mysterious notes. The truth is far more collaborative, humane, and grounded.
@@ -158,7 +158,7 @@ Therapy is not about fixing someone who is "broken"; it is about acquiring high-
     category: 'mental-health',
     imageUrl: 'images/shutterstock_611098478.jpg',
     authorName: 'Marcus Chen, Mental Health Educator',
-    timestamp: 1740700800000,
+    timestamp: 1744416000000,
     wordCount: 575,
     readTime: 3,
     content: `We often imagine anxiety as hyperventilating or having an overt panic attack. However, for a vast majority of teenagers, anxiety operates silently—camouflaged beneath perfectionism, chronic stomach aches, or procrastination.
@@ -183,7 +183,7 @@ Recognizing these subtle cues is the first step toward reclaiming calm. When you
     category: 'mental-health',
     imageUrl: 'images/mental-health-greater-life-chiropractic-1024x683.webp',
     authorName: 'Dr. Rachel Vance, Child & Adolescent Neuropsychiatrist',
-    timestamp: 1740787200000,
+    timestamp: 1748044800000,
     wordCount: 620,
     readTime: 4,
     content: `During adolescence, the brain undergoes its most radical transformation since infancy. Neural pruning systematically reshapes the prefrontal cortex while the limbic system—responsible for raw emotional processing—operates at peak sensitivity. Consequently, experiencing occasional intense frustration, dramatic shifts in energy, or days of feeling down is biologically normal.
@@ -209,7 +209,7 @@ If you or a friend is navigating persistent emotional numbness, remember that de
     category: 'mental-health',
     imageUrl: 'images/NEWS_2024.03.02_Student-led-mental-health-group_Feature_SeventyFour-shutterstock_2195058933.jpg',
     authorName: "Liam O'Connor, Student Peer Support Coordinator",
-    timestamp: 1740873600000,
+    timestamp: 1751673600000,
     wordCount: 580,
     readTime: 3,
     content: `When a teenager is in crisis, their first instinct is rarely to schedule an appointment with an adult authority figure. More often than not, they confide in a friend sitting next to them in study hall or message a classmate late at night.
@@ -239,7 +239,7 @@ Creating a supportive peer culture starts with one simple commitment: choosing t
     category: 'stress',
     imageUrl: 'images/mindfulnessshutterstock_1416917957.webp',
     authorName: 'Maya Patel, Wellness Facilitator',
-    timestamp: 1740355200000,
+    timestamp: 1755302400000,
     wordCount: 540,
     readTime: 3,
     content: `For any teen feeling overwhelmed by the daily grind, try setting aside just a few minutes a day for mindfulness.
@@ -261,7 +261,7 @@ Consistency matters far more than duration. Just five minutes of intentional gro
     category: 'stress',
     imageUrl: 'images/maxresdefault.jpg',
     authorName: 'Chloe Bennett, Academic Counselor',
-    timestamp: 1740441600000,
+    timestamp: 1758931200000,
     wordCount: 640,
     readTime: 4,
     content: `According to recent educational psychology research, more than 70% of high school students cite test scores and college admissions as their primary source of daily distress. The temptation to sacrifice sleep, nutrition, and recreation in pursuit of academic perfection is high—yet counterproductive.
@@ -287,7 +287,7 @@ When you balance diligence with self-compassion, academic rigor becomes sustaina
     category: 'stress',
     imageUrl: 'images/mental-health-mind-800x450.png',
     authorName: 'Devon Brooks, Somatic Coach',
-    timestamp: 1740528000000,
+    timestamp: 1762560000000,
     wordCount: 560,
     readTime: 3,
     content: `When panic strikes right before a presentation or exam, rationalizing with your thoughts is nearly impossible. That is because the amygdala has already triggered physical fight-or-flight reflexes. The quickest way to calm an overstimulated mind is through the physical body.
@@ -313,7 +313,7 @@ Your body is your ally. Learn its language, listen to its signals, and give it t
     category: 'stress',
     imageUrl: 'images/shutterstock_1464234134-1024x684-1.jpg',
     authorName: 'Priya Sharma, M.Ed., High School Counselor',
-    timestamp: 1740614400000,
+    timestamp: 1766188800000,
     wordCount: 610,
     readTime: 4,
     content: `High achievement often carries a hidden tax: a harsh internal narrative where mistakes are magnified and accomplishments are quickly discounted as mere luck. When students face intense academic pressure, their internal dialogue often turns punitive, convincing them that self-criticism is the only way to avoid failure.
@@ -344,7 +344,7 @@ You do not need to beat yourself up to succeed. True academic and emotional resi
     category: 'society',
     imageUrl: 'images/1.jpg',
     authorName: 'Alex Rivers, Teen Advocate',
-    timestamp: 1740268800000,
+    timestamp: 1769817600000,
     wordCount: 580,
     readTime: 3,
     content: `There are moments when it seems like everyone expects you to be perfect—to have perfect grades, behave flawlessly in every social setting, and never show vulnerability.
@@ -372,7 +372,7 @@ You are living your own story, not an audition for someone else's screenplay. Ta
     category: 'society',
     imageUrl: 'images/AdobeStock_237753910-2.jpg',
     authorName: 'Sophia Rodriguez, Adolescent Counselor',
-    timestamp: 1740355200000,
+    timestamp: 1773446400000,
     wordCount: 620,
     readTime: 4,
     content: `Perfectionism is often praised in school and sports as a virtue. But in psychological practice, we recognize perfectionism as a defense mechanism—a belief that if we look perfect, achieve perfect scores, and never make mistakes, we will shield ourselves from judgment, shame, and rejection.
@@ -398,7 +398,7 @@ Real connection is built on shared vulnerability, not curated perfection. The pe
     category: 'society',
     imageUrl: 'images/NEWS_2024.03.02_Student-led-mental-health-group_Feature_SeventyFour-shutterstock_2195058933.jpg',
     authorName: 'Tariq Al-Mansoor, Community Youth Mentor',
-    timestamp: 1740441600000,
+    timestamp: 1777075200000,
     wordCount: 660,
     readTime: 4,
     content: `For millions of young people from immigrant, multicultural, or traditional backgrounds, growing up involves balancing two distinct worlds: the cultural traditions of their families and the contemporary social norms of their schools and peer groups.
@@ -428,7 +428,7 @@ Your identity is not a battleground; it is a tapestry that you have the right to
     category: 'wellness',
     imageUrl: 'images/teenager-sitting-next-window-home-footage-241432759_iconl.webp',
     authorName: 'Samira Khan, Digital Wellness Specialist',
-    timestamp: 1740614400000,
+    timestamp: 1780704000000,
     wordCount: 590,
     readTime: 3,
     content: `Social media platforms are engineered by behavioral scientists to capture and monetize your attention, often at the direct expense of your emotional peace.
@@ -454,7 +454,7 @@ You are the author of your attention. Reclaim your focus, protect your solitude,
     category: 'wellness',
     imageUrl: 'images/mental-health-2019924_1280.jpg',
     authorName: 'Dr. Nathan Foster, Sleep & Neurobiology Researcher',
-    timestamp: 1740700800000,
+    timestamp: 1784332800000,
     wordCount: 670,
     readTime: 4,
     content: `In adolescent culture, running on caffeine and five hours of sleep is often worn as a badge of honor. In neuroscience, however, chronic sleep deprivation is classified as a neurotoxin.
@@ -485,7 +485,7 @@ Sleep is not a luxury you earn after completing your to-do list; it is the biolo
     category: 'wellness',
     imageUrl: 'images/mental1.jpg',
     authorName: 'Aaliyah Brooks, Holistic Youth Coach',
-    timestamp: 1740787200000,
+    timestamp: 1787961600000,
     wordCount: 550,
     readTime: 3,
     content: `How you spend the first twenty minutes of your morning sets the emotional tone for your entire day. If your alarm rings and you immediately roll over to check notifications, your brain jumps straight into reactive stress before your feet even touch the floor.
@@ -511,7 +511,7 @@ Design your mornings to give you energy, not steal it. Small habits accumulated 
     category: 'wellness',
     imageUrl: 'images/image.jpeg',
     authorName: 'Dr. Kai Tanaka, Environmental Psychology Researcher',
-    timestamp: 1740873600000,
+    timestamp: 1790726400000,
     wordCount: 640,
     readTime: 4,
     content: `In modern urban and digital environments, teenagers spend an average of over seven hours daily in front of screens, subjected to what psychologists term "directed attention fatigue." Constant multitasking, notifications, and visual stimuli exhaust the prefrontal cortex's executive control networks.
